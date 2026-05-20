@@ -1,5 +1,3 @@
-letter=input("Enter a message you want to encrypt:")
-shift=int(input("Num you want to shift: "))
 
 def easyencrypt(letter,shift):
     base=ord("a")
@@ -12,5 +10,6 @@ def easyencrypt(letter,shift):
     
     return new
 
-       
+letter=input("Enter a message you want to encrypt:")
+shift=int(input("Num you want to shift: "))     
 print(easyencrypt(letter,shift))
