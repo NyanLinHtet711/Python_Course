@@ -24,7 +24,7 @@ else:
 
  # SHORTER VERSION
 
-# list1 = [int(x) for x in input("Enter: ").split()]
+# list1 = [int(x) for x in input("Enter: ").split()] 
 # list2 = [int(x) for x in input("Enter: ").split()]
 
 # if len(list1) < len(list2):

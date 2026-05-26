@@ -1,4 +1,4 @@
-len("NyanLin")
+print(len("NyanLin"))
 
 
 st="Messi"

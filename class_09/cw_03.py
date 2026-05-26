@@ -9,6 +9,7 @@ for n in list2:
         else:
             print("***", end="  ")
     print()
+
 print("Output#2 is")
 for n in list1:
     for m in list2:
