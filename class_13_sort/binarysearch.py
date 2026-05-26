@@ -1,4 +1,4 @@
-def bi(key, lst):
+def bisearch(key, lst):
 
     lst.sort()
 
@@ -6,13 +6,16 @@ def bi(key, lst):
 
     left = 0
     right = dis - 1
+    c=0
 
     while left <= right:
+        c+=1
 
         middle = (left + right) // 2
 
         if key == lst[middle]:
-            return True
+            print(f"It takes {c} to reach.")
+            return 
 
         elif key < lst[middle]:
             right = middle - 1
@@ -23,4 +26,3 @@ def bi(key, lst):
     return False
 
 
-print(bi(4, [2,5,3,4,1]))

@@ -1,20 +1,20 @@
 def biDirSearch(key, lst):
+    left=0
+    right=len(lst)-1
+    c=0
+    while left<= right:
+        c+=1
+        if lst[left]== key:
+            print (f"It takes {c} times to get the {key} from the left.")
+            return 
+        if lst[right]==key:
+            print(f"It takes {c} times to get the {key} from the right.")
+            return
+        left+=1
+        right-=1
+    print("There is no {key} in the list.")
 
-    c = 0
-
-    while c < len(lst):
-
-        if lst[c] == key:
-            print(f"It takes {c+1} time to find {key}")
-            return True
-
-        c += 1
-
-    print("Sorry Num not found.")
-    return False
-
-
-key = 4
-lst = [2,5,3,4,1]
+key=9 
+lst=[1,4,2,5,66,4,9,23,5,55,4] 
 
 biDirSearch(key, lst)
