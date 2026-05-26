@@ -8,4 +8,4 @@ def linear(key,lst):
     return False
 key=4
 lst=[2,5,3,4,1]
-print(lin
+print(linear(key,lst))
